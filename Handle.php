@@ -3,7 +3,7 @@ $user  = $_GET['User']  ?? '';
 $token = $_GET['Token'] ?? '';
 $code  = $_GET['Code']  ?? '';
 
-$admins = ["Team0verSky", "Leproadu", "Letresor200", "Letresor666", "W00lnX", "Letresor0", "0nlin3Hub", "DeveloperHamed", "HarkinianHexBlud", "MohamedHamed247"];
+$admins = ["HarkinianHexBlud", "SonicElijahMania", "DeveloperHamed", "MohamedHamed247", "thurGT12s", "0nlin3Hub"];
 
 if (!is_dir("queue")) {
     mkdir("queue", 0700, true);
@@ -47,3 +47,4 @@ file_put_contents($queueFile, json_encode([]));
 
 header("Content-Type: application/json");
 echo json_encode($queue);
+
